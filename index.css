@@ -2,6 +2,7 @@
 
     --cor-fundo: #fafafa;
     --cor-primaria: #13293D;
+    --cor-secundaria: #1b98e0;
 
 }
 
@@ -56,11 +57,24 @@ body{
     border: 1px solid grey;
 }
 
+.user-register input[type="submit"] {
+    cursor: pointer;
+}
+
 .user-register h1{
     margin: 20px 0 20px 0;
     color: var(--cor-fundo);
     text-align: center;
 }
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .show-user{
     width: 100%;
@@ -76,10 +90,23 @@ body{
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
+    
 
 }
 
-.show-user ul li{
-    
+.show-user ul li {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    background-color: var(--cor-fundo);
+    width: 33%;
+}
+
+.header ul li{
+    border-radius: 7px;
+    background-color: var(--cor-secundaria);
+    font-weight: bold;
+    color: #fafafa;
 }
 

@@ -14,32 +14,39 @@
 
     <div class="container">
         <div class="user-register">
-            <form action="#">
-                <h1>Cadastrar Usuário</h1>
-                <input type="name" placeholder="name">
-                <input type="email" placeholder="e-mail">
-                <input type="password" placeholder="password">
+            <h1>Cadastrar Usuário</h1>
+            <form id="form">
+                <input type="text" placeholder="name" name="name">
+                <input type="email" placeholder="e-mail" name="email">
+                <input type="password" placeholder="password" name="password">
                 <input type="submit" value="Enviar">
             </form>
         </div>
     
         <div class="show-user">
-            <div class="user">
-                <ul>
-                    <li id="name">andersom</li>
-                    <li id="email">andersom@gmail</li>
-                    <li id="password">123321</li>
+
+            <div class="header">
+                <ul class="header">
+                    <li>Nome</li>
+                    <li>Email</li>
+                    <li>senha</li>
                 </ul>
             </div>
             <div class="user">
+                
                 <ul>
-                    <li id="name">andersom</li>
-                    <li id="email">andersom@gmail</li>
-                    <li id="password">12321</li>
+                    <li id="name" name="nome">andersom</li>
+                    <li id="email" name="email">andersom@gmail</li>
+                    <li id="password" name="password">123321</li>
                 </ul>
             </div>
+
         </div>
     </div>
+
+    <script src="./user.js"></script>
+    <script src="./index.js"></script>
+    
     
 </body>
 </html>
